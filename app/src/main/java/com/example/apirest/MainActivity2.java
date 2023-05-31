@@ -62,7 +62,7 @@ public class MainActivity2 extends AppCompatActivity {
         String encodedPassword = URLEncoder.encode(password, "UTF-8");
 
         // Construye la URL con los parámetros del usuario y la contraseña
-        String apiUrl = "https://7f95-201-159-212-141.ngrok-free.app/api/eventos?";
+        String apiUrl = "https://b316-201-159-212-141.ngrok-free.app/api/eventos?";
         String urlWithParams = apiUrl + "?usuario=" + encodedUsuario + "&password=" + encodedPassword;
 
         // Realiza la solicitud de API con la URL modificada

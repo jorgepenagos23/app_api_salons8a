@@ -4,38 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#030E4C"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="409dp"
-        android:layout_height="204dp"
-        android:text="H"
+        android:layout_width="372dp"
+        android:layout_height="139dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.756" />
 
     <TextView
+        android:gravity="center"
         android:id="@+id/textViewResult2"
-        android:layout_width="409dp"
-        android:layout_height="204dp"
-        android:text="H"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="516dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#FB7E7E"
         android:text="Iniciar sesión"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="377dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="BIENVENIDO AL SALON DE FIESTAS "
+        android:textAlignment="center"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="195dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult2"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/evento" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

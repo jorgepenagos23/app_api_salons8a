@@ -16,14 +16,10 @@ public class WebViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
 
-        webView = findViewById(R.id.webView);
-        webView.setWebViewClient(new WebViewClient());
+
 
         // Configuración adicional para evitar el mensaje de advertencia
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setDomStorageEnabled(true);
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+
 
         String url = getIntent().getStringExtra("url");
         webView.loadUrl(url);

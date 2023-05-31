@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://90b6-201-159-212-141.ngrok-free.app/eventos/eventos";
+                String url = "https://7f95-201-159-212-141.ngrok-free.app/api/eventos?usuario=penagos&password=admin";
 
-                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 intent.putExtra("url", url);
                 startActivity(intent);
             }
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .url("https://90b6-201-159-212-141.ngrok-free.app/api/paquetes")
+                .url("https://7f95-201-159-212-141.ngrok-free.app/api/paquetes?")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Request requestOtraSolicitud = new Request.Builder()
-                .url("https://90b6-201-159-212-141.ngrok-free.app/api/eventos")
+                .url("https://7f95-201-159-212-141.ngrok-free.app/api/servicios?")
                .build();
 
         client.newCall(requestOtraSolicitud).enqueue(new Callback() {
